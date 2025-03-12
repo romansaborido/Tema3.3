@@ -28,13 +28,7 @@ public class Ejercicio6 {
 		do {
 			
 			// Pintamos el menu
-			System.out.println("-------------------------");
-			System.out.println("1. Añadir persona");
-			System.out.println("2. Añadir teléfono a una persona");
-			System.out.println("3. Mostrar los teléfonos de una persona");
-			System.out.println("4. Eliminar teléfono de una persona");
-			System.out.println("5. Eliminar una persona");
-			System.out.println("6. Salir" + "\n");
+			menu();
 			
 			// Pedimos al usuario que introduzca una opcion
 			System.out.println("Introduzca una opcion");
@@ -98,6 +92,8 @@ public class Ejercicio6 {
 					} while (telefono < 100000000 || telefono > 999999999);
 					
 					
+					
+					
 				}
 				
 				// Si el usuario selecciona la opcion 3
@@ -131,6 +127,17 @@ public class Ejercicio6 {
 		
 		// Cerramos el scanner
 		reader.close();
+	}
+	
+	
+	static void menu() {
+		System.out.println("-------------------------");
+		System.out.println("1. Añadir persona");
+		System.out.println("2. Añadir teléfono a una persona");
+		System.out.println("3. Mostrar los teléfonos de una persona");
+		System.out.println("4. Eliminar teléfono de una persona");
+		System.out.println("5. Eliminar una persona");
+		System.out.println("6. Salir" + "\n");
 	}
 
 }
